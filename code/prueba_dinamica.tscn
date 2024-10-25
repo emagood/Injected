@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://kvg81mxci7ug"]
 
-[ext_resource type="Script" path="res://prueba_dinamica.gd" id="1_1gjqx"]
+[ext_resource type="Script" path="res://code/prueba_dinamica.gd" id="1_oexa1"]
 
 [node name="prueba_dinamica" type="Control"]
 layout_mode = 3
@@ -9,4 +9,4 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_1gjqx")
+script = ExtResource("1_oexa1")

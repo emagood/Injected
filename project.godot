@@ -10,10 +10,16 @@ config_version=5
 
 [application]
 
-config/name="net server 4"
-run/main_scene="res://prueba_dinamica.tscn"
+config/name="script_inyected"
+run/main_scene="res://code/prueba_dinamica.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 boot_splash/minimum_display_time=1500
+
+[file_customization]
+
+folder_colors={
+"res://code/": "red"
+}
 
 [rendering]
 
