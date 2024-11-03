@@ -1,6 +1,10 @@
 extends Control
 var file
 var script_content
+
+
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	add_to_group("sala")
@@ -10,10 +14,15 @@ func _ready() -> void:
 		script_content = file.get_as_text()
 		script_content += "func ema():
 	var i = 10
+	grupos()
 	while i :
 		prints('injected',i)
 		i -= 1
-	prints('script injected ')"
+	prints(grupo.name,'  This is my group node')
+	prints(self.name)
+	self.name = 'script injected'
+	prints(self.name , 'My node has a name')"
+	
 	
 
 
@@ -35,6 +44,9 @@ func _ready() -> void:
 				prints(instance)
 				
 ############ QUITAMOS EL SCRIPT TEMPORAL DEL DISCO
+############ REMOVING THE TEMPORARY SCRIPT FROM DISK
+
+
 				var file_path = "res://temp_script.gd"
 				# Usar DirAccess para eliminar el archivo
 				var dir = DirAccess.open("res://")
@@ -59,6 +71,8 @@ func _ready() -> void:
 		
 pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
+
+
 func _process(delta: float) -> void:
 	pass
