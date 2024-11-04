@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="script_inyected"
-run/main_scene="res://code/prueba_dinamica.tscn"
+run/main_scene="res://code/Test_file_script.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 boot_splash/minimum_display_time=1500
 
