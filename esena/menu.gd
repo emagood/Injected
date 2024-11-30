@@ -18,3 +18,8 @@ func _on_acto_3_pressed() -> void:
 	var menu = preload("res://code/Test_variant_dinamic.tscn").instantiate()
 	add_child(menu)
 	await get_tree().create_timer(3).timeout
+
+
+func _on_quit_pressed() -> void:
+	get_tree().quit()
+	pass # Replace with function body.

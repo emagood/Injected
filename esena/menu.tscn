@@ -21,9 +21,15 @@ grow_vertical = 2
 color = Color(1, 0.145098, 1, 0.313726)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 4.0
+offset_right = -14.0
+offset_bottom = 140.0
+grow_horizontal = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 custom_minimum_size = Vector2(777, 88)
@@ -45,6 +51,11 @@ text = "load script "
 layout_mode = 2
 text = "variant"
 
+[node name="quit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "quit"
+
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/acto 1" to="." method="_on_acto_1_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/acto 2" to="." method="_on_acto_2_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/acto 3" to="." method="_on_acto_3_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
