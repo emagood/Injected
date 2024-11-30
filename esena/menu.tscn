@@ -41,5 +41,10 @@ text = "file load y modi"
 layout_mode = 2
 text = "load script "
 
+[node name="acto 3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "variant"
+
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/acto 1" to="." method="_on_acto_1_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/acto 2" to="." method="_on_acto_2_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/acto 3" to="." method="_on_acto_3_pressed"]

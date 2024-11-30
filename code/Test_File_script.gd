@@ -58,7 +58,7 @@ func _ready() -> void:
 						else:
 							print("Error al eliminar el archivo de res//: %s" % error)
 					else:
-						print("El archivo no existe en el directorio especificado")
+						print("El archivo no existe en el dirsectorio especificado")
 				else:
 					print("Error al abrir el directorio res//")
 
@@ -76,3 +76,8 @@ pass
 
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_salir_pressed() -> void:
+	queue_free()
+	pass # Replace with function body.

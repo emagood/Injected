@@ -10,3 +10,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yfuwk")
+
+[node name="fondo" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.513726, 0.619608, 1, 1)
+
+[node name="salir" type="Button" parent="."]
+offset_left = 49.0
+offset_top = 39.0
+offset_right = 90.0
+offset_bottom = 70.0
+text = "salir"
+
+[connection signal="pressed" from="salir" to="." method="_on_salir_pressed"]

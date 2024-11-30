@@ -8,9 +8,15 @@ func _init():
 	prints("My dynamic script running ", data_export)
 
 
+func _ready() -> void:
+	prints("hola desde ready")
+
+func ema():
+	queue_free()
 
 func _process(delta: float) -> void:
-	#prints("hi")   # warring
+	prints("hi desde process")   # warring
+	ema()
 	pass
 	"""
 
@@ -43,6 +49,7 @@ func _ready() -> void:
 		node.name = "emma"  #Give it a nice name :)  // un lindo nombre al nodo
 		
 	# Agregar el nodo a la escena /// Add the node to the scene
+		#add_child(node)
 		get_tree().root.add_child.call_deferred(node)
 	else:
 		print("Error al compilar el script  ///  Error compiling script")
@@ -52,3 +59,8 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_salir_pressed() -> void:
+	queue_free()
+	pass # Replace with function body.
