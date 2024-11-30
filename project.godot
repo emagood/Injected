@@ -10,15 +10,16 @@ config_version=5
 
 [application]
 
-config/name="script_inyected"
-run/main_scene="res://code/Test_file_script.tscn"
+config/name="inyected"
+run/main_scene="res://esena/menu.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/minimum_display_time=1500
 
 [file_customization]
 
 folder_colors={
-"res://code/": "red"
+"res://code/": "orange",
+"res://esena/": "red"
 }
 
 [rendering]
